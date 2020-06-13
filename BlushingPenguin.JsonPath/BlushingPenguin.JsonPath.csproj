@@ -14,9 +14,9 @@ Target Framework downgraded to NetStandard 2.0 to retain compatibility with .Net
       <RepositoryType>git</RepositoryType>
       <IncludeSymbols>true</IncludeSymbols>
       <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-      <AssemblyVersion>1.0.0.1</AssemblyVersion>
-      <FileVersion>1.0.0.1</FileVersion>
-      <PackageVersion>1.0.1</PackageVersion>
+      <AssemblyVersion>1.0.0.2</AssemblyVersion>
+      <FileVersion>1.0.0.2</FileVersion>
+      <PackageVersion>1.0.1.20</PackageVersion>
       <Version>1.0.1.20</Version>
       <PackageProjectUrl>https://github.com/blushingpenguin/BlushingPenguin.JsonPath</PackageProjectUrl>
   </PropertyGroup>
