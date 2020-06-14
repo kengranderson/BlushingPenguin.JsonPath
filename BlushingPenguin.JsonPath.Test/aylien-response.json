@@ -1,0 +1,168 @@
+{
+    "rules": {
+        "keywords": "results[?(@.endpoint == 'entities')].result.entities.keyword[*]",
+        "persons": "results[?(@.endpoint == 'entities')].result.entities.person[*]",
+        "organizations": "results[?(@.endpoint == 'entities')].result.entities.organization[*]",
+        "locations": "results[?(@.endpoint == 'entities')].result.entities.location[*]",
+        "concepts": "results[?(@.endpoint == 'concepts')].result.concepts.*.surfaceForms[*].string",
+        "hashtags": "results[?(@.endpoint == 'hashtags')].result.hashtags[*]",
+        "categories": "results[?(@.endpoint == 'classify/iab-qag')].result.categories[*].label"
+    },
+    "text": "Fire engulfed the Andy Dablu Enterprise fuel tanker yard, at Kpone in the Kpone Katamanso municipality of the Greater Accra Region, on Tuesday evening, damaging two surface tanks used for storage of petrol.\n\nThe timely intervention by personnel of the Ghana National Fire Service and Ghana Police Service prevented possible casualties and further destruction of properties.\n\nAccording to the second in command of the Tema Regional Fire Command, Divisional Officer Grade One (DO1) Timothy Osafo-Affum, no fuel tanker was burnt.\n\nHe said on Tuesday at about 5:40pm, personnel received a call reporting an outbreak of fire at a tanker yard at Kpone.\n\nDO1 Osafo-Affum said four fire tenders and one tanker were dispatched to the scene to quench the fire, but the cause of the fire was yet to be established.",
+    "results": [
+        {
+            "endpoint": "entities",
+            "result": {
+                "language": "en",
+                "entities": {
+                    "organization": [ "Ghana National Fire Service", "Ghana Police Service", "Tema Regional Fire Command" ],
+                    "location": [ "Kpone", "Greater Accra Region", "5:40pm" ],
+                    "keyword": [ "Regional Fire Command", "fire at a tanker", "Osafo-Affum said four fire", "fuel tanker", "Fire", "surface tanks", "tanker", "Tuesday", "Region", "personnel", "fuel", "command", "Osafo-Affum", "surface", "tanks", "storage", "damaging", "petrol", "Ghana", "evening" ],
+                    "date": [ "Tuesday" ],
+                    "person": [ "Timothy Osafo-Affum" ],
+                    "product": [ "Andy Dablu Enterprise" ]
+                }
+            }
+        },
+        {
+            "endpoint": "concepts",
+            "result": {
+                "language": "en",
+                "concepts": {
+                    "http://dbpedia.org/resource/Tema": {
+                        "surfaceForms": [
+                            {
+                                "string": "Tema",
+                                "score": 0.9963567852973938,
+                                "offset": 417
+                            }
+                        ],
+                        "types": [ "http://dbpedia.org/ontology/PopulatedPlace", "http://dbpedia.org/ontology/Settlement", "http://dbpedia.org/ontology/City", "http://schema.org/Place", "http://schema.org/City", "http://dbpedia.org/ontology/Location", "http://dbpedia.org/ontology/Place" ],
+                        "support": 446
+                    },
+                    "http://dbpedia.org/resource/Enterprise_(NX-01)": {
+                        "surfaceForms": [
+                            {
+                                "string": "Enterprise",
+                                "score": 0.3530566692352295,
+                                "offset": 29
+                            }
+                        ],
+                        "types": [ "http://dbpedia.org/ontology/Spaceship", "http://dbpedia.org/ontology/FictionalCharacter" ],
+                        "support": 1118
+                    },
+                    "http://dbpedia.org/resource/Greater_Accra_Region": {
+                        "surfaceForms": [
+                            {
+                                "string": "Greater Accra Region",
+                                "score": 1.0,
+                                "offset": 110
+                            }
+                        ],
+                        "types": [ "http://dbpedia.org/ontology/PopulatedPlace", "http://dbpedia.org/ontology/Settlement", "http://schema.org/Place", "http://dbpedia.org/ontology/Location", "http://dbpedia.org/ontology/Place" ],
+                        "support": 431
+                    },
+                    "http://dbpedia.org/resource/Ghana_Police_Service": {
+                        "surfaceForms": [
+                            {
+                                "string": "Ghana Police Service",
+                                "score": 1.0,
+                                "offset": 284
+                            }
+                        ],
+                        "types": [ "http://dbpedia.org/ontology/Organisation", "http://dbpedia.org/ontology/GovernmentAgency", "http://dbpedia.org/ontology/Agency" ],
+                        "support": 53
+                    },
+                    "http://dbpedia.org/resource/Gasoline": {
+                        "surfaceForms": [
+                            {
+                                "string": "petrol",
+                                "score": 0.9781476855278015,
+                                "offset": 199
+                            }
+                        ],
+                        "types": [ "http://dbpedia.org/ontology/Liquid", "http://dbpedia.org/ontology/ChemicalCompound" ],
+                        "support": 6354
+                    },
+                    "http://dbpedia.org/resource/Tanker_(ship)": {
+                        "surfaceForms": [
+                            {
+                                "string": "tanker",
+                                "score": 0.8955544233322144,
+                                "offset": 45
+                            }
+                        ],
+                        "types": [ "http://dbpedia.org/ontology/Vessel", "http://dbpedia.org/ontology/Ship" ],
+                        "support": 1923
+                    },
+                    "http://dbpedia.org/resource/Firefighting_apparatus": {
+                        "surfaceForms": [
+                            {
+                                "string": "fire tenders",
+                                "score": 0.545312762260437,
+                                "offset": 674
+                            }
+                        ],
+                        "types": [],
+                        "support": 467
+                    },
+                    "http://dbpedia.org/resource/Municipalities_of_Switzerland": {
+                        "surfaceForms": [
+                            {
+                                "string": "municipality",
+                                "score": 0.45282217860221863,
+                                "offset": 90
+                            }
+                        ],
+                        "types": [ "http://dbpedia.org/ontology/Division", "http://dbpedia.org/ontology/Organisation" ],
+                        "support": 30672
+                    }
+                }
+            }
+        },
+        {
+            "endpoint": "hashtags",
+            "result": {
+                "language": "en",
+                "hashtags": [ "#Tanker", "#Enterprise", "#MunicipalitiesOfSwitzerland", "#GreaterAccraRegion", "#Gasoline", "#GhanaPoliceService", "#Tema", "#FirefightingApparatus" ]
+            }
+        },
+        {
+            "endpoint": "classify/iab-qag",
+            "result": {
+                "taxonomy": "iab-qag",
+                "language": "en",
+                "categories": [
+                    {
+                        "confident": true,
+                        "score": 0.08,
+                        "label": "Automotive",
+                        "links": [
+                            {
+                                "rel": "self",
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB2"
+                            }
+                        ],
+                        "id": "IAB2"
+                    },
+                    {
+                        "confident": false,
+                        "score": 0.08,
+                        "label": "Off-Road Vehicles",
+                        "links": [
+                            {
+                                "rel": "self",
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB2-16"
+                            },
+                            {
+                                "rel": "parent",
+                                "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB2"
+                            }
+                        ],
+                        "id": "IAB2-16"
+                    }
+                ]
+            }
+        }
+    ]
+}

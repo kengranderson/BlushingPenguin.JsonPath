@@ -23,4 +23,18 @@
     <ProjectReference Include="..\BlushingPenguin.JsonPath\BlushingPenguin.JsonPath.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Resource Include="aylien-response.json" />
+    <Resource Include="watson-response.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="aylien-response.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="watson-response.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

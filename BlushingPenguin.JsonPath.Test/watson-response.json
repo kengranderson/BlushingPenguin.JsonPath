@@ -1,0 +1,266 @@
+{
+    "rules": {
+        "keywords": "keywords[*].text",
+        "persons": "entities[?(@.type == 'Person')].text",
+        "locations": "entities[?(@.type == 'Location')].text",
+        "concepts": "concepts[*].text",
+        "categories": "categories[*].label",
+        "organizations": "entities[?(@.type == 'Organization' || @.type == 'Company')].text"
+    },
+    "usage": {
+        "text_units": 1,
+        "text_characters": 806,
+        "features": 4
+    },
+    "language": "en",
+    "keywords": [
+        {
+            "text": "command of the Tema Regional Fire Command",
+            "relevance": 0.792292,
+            "count": 1
+        },
+        {
+            "text": "personnel of the Ghana National Fire Service",
+            "relevance": 0.740964,
+            "count": 1
+        },
+        {
+            "text": "timely intervention",
+            "relevance": 0.70611,
+            "count": 1
+        },
+        {
+            "text": "Tuesday evening",
+            "relevance": 0.693545,
+            "count": 1
+        },
+        {
+            "text": "Divisional Officer Grade",
+            "relevance": 0.668142,
+            "count": 1
+        },
+        {
+            "text": "Timothy Osafo-Affum",
+            "relevance": 0.646412,
+            "count": 1
+        },
+        {
+            "text": "DO1",
+            "relevance": 0.623821,
+            "count": 1
+        },
+        {
+            "text": "Fire",
+            "relevance": 0.609984,
+            "count": 2
+        },
+        {
+            "text": "DO1 Osafo-Affum",
+            "relevance": 0.552222,
+            "count": 1
+        },
+        {
+            "text": "outbreak of fire",
+            "relevance": 0.531546,
+            "count": 1
+        },
+        {
+            "text": "scene",
+            "relevance": 0.51854,
+            "count": 1
+        },
+        {
+            "text": "personnel",
+            "relevance": 0.517376,
+            "count": 1
+        },
+        {
+            "text": "fire tenders",
+            "relevance": 0.513598,
+            "count": 1
+        },
+        {
+            "text": "surface",
+            "relevance": 0.510909,
+            "count": 1
+        },
+        {
+            "text": "tanker",
+            "relevance": 0.510224,
+            "count": 1
+        },
+        {
+            "text": "Ghana Police Service",
+            "relevance": 0.490732,
+            "count": 1
+        },
+        {
+            "text": "fuel tanker",
+            "relevance": 0.481345,
+            "count": 1
+        },
+        {
+            "text": "cause of the fire",
+            "relevance": 0.462872,
+            "count": 1
+        },
+        {
+            "text": "tanker yard",
+            "relevance": 0.460344,
+            "count": 1
+        },
+        {
+            "text": "possible casualties",
+            "relevance": 0.439374,
+            "count": 1
+        },
+        {
+            "text": "further destruction of properties",
+            "relevance": 0.423291,
+            "count": 1
+        },
+        {
+            "text": "Andy Dablu Enterprise fuel tanker yard",
+            "relevance": 0.417561,
+            "count": 1
+        },
+        {
+            "text": "Kpone Katamanso municipality of the Greater Accra Region",
+            "relevance": 0.415021,
+            "count": 1
+        },
+        {
+            "text": "Kpone",
+            "relevance": 0.412513,
+            "count": 2
+        },
+        {
+            "text": "storage of petrol",
+            "relevance": 0.409055,
+            "count": 1
+        },
+        {
+            "text": "Tuesday",
+            "relevance": 0.389499,
+            "count": 1
+        },
+        {
+            "text": "call",
+            "relevance": 0.388715,
+            "count": 1
+        }
+    ],
+    "entities": [
+        {
+            "type": "Organization",
+            "text": "Ghana National Fire Service",
+            "relevance": 0.844741,
+            "count": 1
+        },
+        {
+            "type": "Organization",
+            "text": "Tema Regional Fire Command",
+            "relevance": 0.792723,
+            "count": 1
+        },
+        {
+            "type": "Person",
+            "text": "Timothy Osafo-Affum",
+            "relevance": 0.521321,
+            "count": 3
+        },
+        {
+            "type": "Organization",
+            "text": "Ghana Police Service",
+            "relevance": 0.47224,
+            "count": 1
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Greater Accra Region",
+            "relevance": 0.454007,
+            "count": 1
+        },
+        {
+            "type": "JobTitle",
+            "text": "Divisional Officer Grade One",
+            "relevance": 0.452662,
+            "count": 1
+        },
+        {
+            "type": "Company",
+            "text": "Andy Dablu Enterprise",
+            "relevance": 0.429142,
+            "count": 1
+        },
+        {
+            "type": "Location",
+            "text": "Kpone",
+            "relevance": 0.375904,
+            "disambiguation": {
+                "subtype": [
+                    "City"
+                ]
+            },
+            "count": 2
+        },
+        {
+            "type": "Location",
+            "text": "Kpone Katamanso",
+            "relevance": 0.338713,
+            "disambiguation": {
+                "subtype": [
+                    "City"
+                ]
+            },
+            "count": 1
+        }
+    ],
+    "concepts": [
+        {
+            "text": "Accra",
+            "relevance": 0.954135,
+            "dbpedia_resource": "http://dbpedia.org/resource/Accra"
+        },
+        {
+            "text": "Ghana",
+            "relevance": 0.930666,
+            "dbpedia_resource": "http://dbpedia.org/resource/Ghana"
+        },
+        {
+            "text": "Greater Accra Region",
+            "relevance": 0.913533,
+            "dbpedia_resource": "http://dbpedia.org/resource/Greater_Accra_Region"
+        },
+        {
+            "text": "Regions of Ghana",
+            "relevance": 0.669275,
+            "dbpedia_resource": "http://dbpedia.org/resource/Regions_of_Ghana"
+        },
+        {
+            "text": "Law enforcement in Ghana",
+            "relevance": 0.610029,
+            "dbpedia_resource": "http://dbpedia.org/resource/Law_enforcement_in_Ghana"
+        },
+        {
+            "text": "Ga East District",
+            "relevance": 0.594573,
+            "dbpedia_resource": "http://dbpedia.org/resource/Ga_East_District"
+        }
+    ],
+    "categories": [
+        {
+            "score": 0.713346,
+            "label": "/law, govt and politics"
+        },
+        {
+            "score": 0.650075,
+            "label": "/law, govt and politics/law enforcement/fire department"
+        },
+        {
+            "score": 0.615333,
+            "label": "/law, govt and politics/armed forces/air force"
+        }
+    ],
+    "analyzed_text": "Fire engulfed the Andy Dablu Enterprise fuel tanker yard, at Kpone in the Kpone Katamanso municipality of the Greater Accra Region, on Tuesday evening, damaging two surface tanks used for storage of petrol.  The timely intervention by personnel of the Ghana National Fire Service and Ghana Police Service prevented possible casualties and further destruction of properties.  According to the second in command of the Tema Regional Fire Command, Divisional Officer Grade One (DO1) Timothy Osafo-Affum, no fuel tanker was burnt.  He said on Tuesday at about 5:40pm, personnel received a call reporting an outbreak of fire at a tanker yard at Kpone.  DO1 Osafo-Affum said four fire tenders and one tanker were dispatched to the scene to quench the fire, but the cause of the fire was yet to be established.\n\n\n"
+}
